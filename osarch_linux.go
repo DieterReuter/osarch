@@ -23,6 +23,14 @@ func getUnameMachine() string {
 	return string(s[0:lens])
 }
 
+func Arch() string {
+	s := fmt.Sprint(runtime.GOARCH)
+	if runtime.GOARCH == "arm" {
+		s = fmt.Sprint(s, "/", getUnameMachine())
+	}
+	return s
+}
+
 func OsArch() string {
 	s := fmt.Sprint(runtime.GOOS, "/", runtime.GOARCH)
 	if runtime.GOARCH == "arm" {
