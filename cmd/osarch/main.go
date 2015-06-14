@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println(osarch.Arch())
-	fmt.Println(osarch.OsArch())
+	fmt.Println("Arch()=", osarch.Arch())
+	fmt.Println("OsArch()=", osarch.OsArch())
 }
