@@ -19,11 +19,13 @@ GOOS=linux GOARCH=arm go build .
 Usage on OSX:
 ```
 ./osarch
-darwin/amd64
+Arch()= amd64
+OsArch()= darwin/amd64
 ```
 
 Usage on a Raspberry Pi 1:
 ```
 ./osarch
-linux/arm/armv6l
+Arch()= arm/armv6l
+OsArch()= linux/arm/armv6l
 ```
